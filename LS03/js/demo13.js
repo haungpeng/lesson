@@ -16,9 +16,9 @@ Number.POSITIVE_INFINITY
 
 var n1 = 12345.6789;
 console.log(n1.toFixed(2));
-console.log(n1.toPrecision(2));
+console.log(n1.toPrecision(2));     保留两位有效数字
 console.log(n1.toString());
-console.log(n1.toExponential(2));
+console.log(n1.toExponential(2));   转化为两位小数的指数形式
 
 //
 console.log(NaN === NaN);
