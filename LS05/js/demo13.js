@@ -43,7 +43,7 @@ console.log(2 == new Number(2));//true
 //false
 //{}==={}
 //false
-
+//
 var obj1 = {x:2,y:[1],z:false};
 var obj2 = {x:2,y:[1],z:new Boolean(true)};
 console.log(obj1.x===obj2.x);//true
