@@ -55,3 +55,4 @@ var max = function (x,y) {
 {
     foo:max(2,3)
 }
+//new Boolean(false);二义性
