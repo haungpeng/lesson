@@ -1,6 +1,7 @@
 /**
  * Created by qile on 2017/8/14.
  */
+//arguments类数组类型
 //实参数大于形参数
 function test() {
     console.log(arguments);//console.log(test.arguments);
@@ -12,6 +13,10 @@ function test() {
     return s;
 }
 test("hello,", "world!");//"hello,world!"
+//console.log(arguments.length);
+//console.log(typeof arguments);
+//console.log(arguments instanceof Array);
+//console.log(arguments instanceof Object)
 
 
 //实参数小于形参数

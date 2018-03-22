@@ -78,7 +78,11 @@ var me = {
 bird.fly(5,6);
 fish.swim.call(me,3,4);
 bird.fly.call(me,7,8);
+//fish.swim.apply(me,[3,4]);
+//bird.fly.apply(me,[7,8]);
 //swim(1,2);与swim.call(null,1,2);相同
+//全局定义 var name=11;
+//fish.swim.call(null,5,6); 结果为i'm 11 i cam swim ___ 5 6
 
 
 //很多方法都可以通过间接调用的方式来调用，比如很多原型的方法
@@ -99,3 +103,31 @@ Person.prototype.sayHi = function(){
 };
 var p1 = new Person("Jack");
 p1.sayHi();//Hi,i'm Jack
+
+
+var x=45;
+var test=function(){
+	console.log("输出",this.x);
+}
+var obj={
+	x:23
+};
+obj.test=test;
+obj.test();
+test();
+//输出23
+//输出45
+
+
+var x=45;
+var obj={
+	x:23,
+	test:function(){
+		function foo(){
+			console.log(this.x);//嵌套函数this不一定指向前面的对象
+		}
+		foo();
+	}
+};
+obj.test();
+//45
