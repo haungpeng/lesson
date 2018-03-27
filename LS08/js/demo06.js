@@ -120,7 +120,10 @@ console.log(li.sex);//M
 Man.prototype.isStrong = true;
 console.log(li.isStrong);//true
 
-
+var o={};
+o.__proto__ === Object.prototype;
+var a=[];
+a.__proto__ === Array.prototype;
 
 // Part 222222222222222222222222222222222222222222222222222222222
 //函数对象方法之 call 调用一个普通函数或对象的方法时，用另一个对象替换当前对象
