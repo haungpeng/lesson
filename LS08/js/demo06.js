@@ -219,3 +219,33 @@ console.log(foo.hasOwnProperty("valueOf"));
 console.log(Object.prototype.hasOwnProperty("valueOf"));
 //关于toString与valueOf的详细内容参见JS对象相关章节
 
+var x=45;
+var obj ={
+	x:23,
+	test:function(){
+		function foo(){
+			console.log(this.x);
+		}
+		foo.bind(this)();
+		foo();
+	}
+}
+obj.test();
+
+var x=12;
+var obj ={
+	x:34,
+	fun2:function(){
+		console.log(this.x,this);
+	}
+}
+var fun1=function(){
+	console.log("this1:",this);
+	return function fun2(){
+		console.log("this2",this);
+		return this.x;
+	}
+}
+obj.fun3=fun1;
+obj.fun4=fun1();
+console.log(obj.fun3()());

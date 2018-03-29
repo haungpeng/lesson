@@ -14,20 +14,20 @@ a = 1;
 console.log(a);
 
 //思考如下代码输出什么 值类型
-console.log(a,b);//输出什么
+console.log(a,b);//undefined undefine
 var b = 23;
-console.log(a,b);//输出什么
+console.log(a,b);//undefine 23
 var a = b;
-console.log(a,b);//输出什么
+console.log(a,b);//23 23
 
 //思考如下代码输出什么 引用类型
-console.log(obj1,obj2);//输出什么
+console.log(obj1,obj2);//undefined undefined
 var obj1 = {x:23};
-console.log(obj1,obj2);//输出什么
+console.log(obj1,obj2);// {x: 23} undefined
 var obj2 = obj1;
-console.log(obj1,obj2);//输出什么
+console.log(obj1,obj2);//{x: 23} {x: 23}
 obj2.x =25;
-console.log(obj1,obj2);//输出什么
+console.log(obj1,obj2);//{x: 25} {x: 25}
 
 
 // Part 22222222222222222
@@ -61,6 +61,13 @@ var foo = function(){
     console.log("foo");
 };
 foo();//是否会报错
+//等效于
+var foo;
+console.log(foo);
+foo=function(){
+    console.log("foo");
+}
+foo();
 
 
 
@@ -78,7 +85,7 @@ AA();
 function AA(){
     console.log("AA_1");
 }
-var AA;
+var AA;//解析器不会进行二次申明
 
 AA();
 AA = function AA(){
