@@ -35,3 +35,5 @@ console.log(Math instanceof Function);//false
 console.log(JSON instanceof Function);//false
 console.log(JSON instanceof Object);//true
 
+typeof new new new Function();//报错
+typeof new new Function();//object
