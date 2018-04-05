@@ -19,7 +19,7 @@ function foo() {
     var name = "Bill";
     echo();
 }
-foo();//Bill or Jack
+foo();//Jack
 
 
 
@@ -36,4 +36,4 @@ function foo() {
     }
     fee();
 }
-foo();//Bill or Jack
+foo();//Jack
