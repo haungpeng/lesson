@@ -27,3 +27,4 @@ true && function(a,b){
 }("5",5);
 
 //思考 !function(){return 2; }( ); 与 !function(){return 0; }();
+//false                             //true
