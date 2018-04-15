@@ -11,11 +11,11 @@ function counter() {
 }
 var c = counter();
 var d = counter();
-console.log(c.count());
-console.log(d.count());
-console.log(c.reset());
-console.log(c.count());
-console.log(d.count());
+console.log(c.count());//1
+console.log(d.count());//1
+console.log(c.reset());//0
+console.log(c.count());//1
+console.log(d.count());//2
 
 
 //闭包实例 Part 2222222222222222

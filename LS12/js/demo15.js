@@ -54,7 +54,7 @@ var object = {
         };
     }
 };
-console.log(object.getNameFunc()());
+console.log(object.getNameFunc()());//The Window
 
 // 实例二
 var name = "The Window";
