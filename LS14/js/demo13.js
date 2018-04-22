@@ -59,3 +59,5 @@ var obj2 = Object.create(empty,{
 });
 console.log(obj2);
 console.log(obj2.hasOwnProperty("x"));
+//{y:2,x:1}
+//true

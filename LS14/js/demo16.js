@@ -15,7 +15,7 @@ empty2 = Object.create({},{
         writable : true//可写
     }
 });
-console.log(Object.isExtensible(empty2));
+console.log(Object.isExtensible(empty2));//true
 
 
 //////////Object.isExtensible和Object.preventExtensions实例////////
