@@ -20,15 +20,15 @@ console.log(obj.hasOwnProperty("z"));//false
 ///////////Part2 原型链属性操作////////////
 obj.z = 5;
 
-console.log(obj.hasOwnProperty("z"));
-console.log(obj.z);
-console.log(proObj.z);
+console.log(obj.hasOwnProperty("z"));//false
+console.log(obj.z);//5
+console.log(proObj.z);//3
 
 obj.z = 8;
-console.log(obj.z);
+console.log(obj.z);//8
 
 delete obj.z;//true
-console.log(obj.z);
+console.log(obj.z);//3
 
 delete obj.z;//true
 console.log(obj.z);//still 3
