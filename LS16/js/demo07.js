@@ -9,7 +9,7 @@ var superObj = {
 var subObj_First = Object.create(superObj);
 var subObj_Second = Object.create(superObj);
 subObj_First.__proto__.x = 5;
-console.log(subObj_Second.x);
+console.log(subObj_Second.x);//5
 
 
 var superObj={
@@ -18,7 +18,7 @@ var superObj={
 var first=Object.create(superObj);
 first.x=1;
 first.y=2;
-first.show();
+first.show();//1 2
 
 var superObj={
     x:3,
@@ -28,4 +28,4 @@ var superObj={
 var first=Object.create(superObj);
 first.x=1;
 first.y=2;
-first.show();
+first.show();//1 2

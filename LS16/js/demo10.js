@@ -27,7 +27,7 @@ BaseClass.f1();//BaseClass ' s static method
 BaseClass.f2();//Class2 ' s static method
 Class2.f1();//BaseClass ' s static method
 Class2.f2();//Class2 ' s static method
-console.log(BaseClass === Class2);
+console.log(BaseClass === Class2);//true
 
 
 //思考下述案例 原型方法 和 实例方法
