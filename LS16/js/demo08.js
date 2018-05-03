@@ -15,7 +15,7 @@ function Student(id){
 }
 //var p1 = new Person("Mike");Student.prototype = p1;
 Student.prototype = new Person("Mike");
-var s1 = new Student(2017001);
+var s1 = new Student(2017001);//属性含有name属性
 var s2 = new Student(2017002);
 
 //测试如下代码，思考为什么，这样的继承有什么弊端
