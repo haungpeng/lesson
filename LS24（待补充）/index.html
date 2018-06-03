@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>待补充</title>
-    <script>
-    </script>
-</head>
-<body>
+    <title>事件流</title>
+    <style>
+        #div1{
+  width: 200px;
+  height: 200px;
+  background-color: red; 
+  margin: 0px;
+  padding: 0px; 
+}
 
+#div2{
+  width: 100px;
+  height: 100px;
+  background-color: yellow; 
+  padding: 0px;
+  margin: 50px;
+  position: absolute;
+}
+
+#div3{
+  width: 50px;
+  height: 50px;
+  background-color: blue; 
+  padding: 0px;
+  margin: 25px;
+  position: absolute;
+}
+
+    </style>
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <!--  -->
+    <!-- <div id="div1">
+    </div>
+    <div id="div2">
+    </div> -->
+
+    <!-- 思考下述情况响应的顺序，事件在节点间是如何传递 -->
+    <div id="div1">
+        <div id="div2">
+        </div>
+    </div>
 </body>
+
 </html>
