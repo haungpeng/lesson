@@ -3,16 +3,16 @@
  */
 //对象的解构赋值
 var { foo1, bar1 } = { foo1: "aaa", bar1: "bbb" };
-console.log(foo1,bar1);
+console.log(foo1,bar1);//"aaa" "bbb"
 
 // 对象的解构与数组有一个重要的不同。\
 // 数组的元素是按次序排列的，变量的取值由它的位置决定
 // 而对象的属性没有次序，变量必须与属性同名，才能取到正确的值
 var { bar2, foo2 } = { foo2: "ccc", bar2: "ddd" };//顺序不同，没关系
-console.log(foo2,bar2);
+console.log(foo2,bar2);//"ccc" "ddd"
 
 var { baz3 } = { foo3: "ccc", bar3: "ddd" };
-console.log(baz3);
+console.log(baz3);//undefined
 
 ////////////////////////////////////////////////////
 //左侧为键值对时,注意键值对赋值时的对应关系
@@ -24,9 +24,10 @@ let obj1 = { first: 'hello', last: 'world' };
 
 let { first: f, last: l } = obj1;
 console.log(f,l);//注意和下边写法的区别
+//'hello' 'world'
 
 let { first, last } = obj1;
-console.log(first,last);
+console.log(first,last);//'hello' 'world'
 
 ////////////////////////////////////////
 //这实际上说明，对象的解构赋值是下面形式的简写（参见《对象的扩展》一章）。
