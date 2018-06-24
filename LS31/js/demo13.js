@@ -48,8 +48,8 @@ console.log(Symbol.keyFor(s2)); // undefined
 
 //思考：
 var s3 = Symbol(Symbol.keyFor(s1));
-console.log(s1 === s3);
-console.log(s2 === s3);
+console.log(s1 === s3);//false
+console.log(s2 === s3);//false
 var s4 = Symbol.for(Symbol.keyFor(s1));
-console.log(s1 === s4);
-console.log(s2 === s4);
+console.log(s1 === s4);//true
+console.log(s2 === s4);//false

@@ -6,7 +6,7 @@
 function test() {
     console.log(arguments);//console.log(test.arguments);
 }
-test("a","b","c");//
+test("a","b","c");//Arguments(3) ["a", "b", "c", callee: ƒ, Symbol(Symbol.iterator): ƒ]
 
 //...Rest 相当于合并若干参数为一个数组，主要用于函数定义时，代替 arguments，组解决arguments的弊端
 function f(...y){

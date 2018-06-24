@@ -52,6 +52,10 @@ console.log(obj[myS1],obj[Symbol("xx")]);//输出什么？如何解释Symbol
 console.log(obj[myS2],obj["xx"]);
 // console.log(obj["myS1"]);
 // console.log(obj["myS2"]);
+//123 undefined
+//456 456
+// undefined
+// undefined
 
 //同理，在对象的内部，使用Symbol值定义属性时，Symbol值必须放在方括号之中
 // 如果不用[]的话相当于使用s对应的字符串定义属性

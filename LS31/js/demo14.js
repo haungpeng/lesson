@@ -64,8 +64,8 @@ console.log(...(new Set([1, 2, 3, 4, 5])));//1, 2, 3, 4, 5
 //关于Set的遍历方法
 var set = new Set(['red', 'green', 'blue']);
 console.log(typeof set.keys());//注意是什么类型，是否可迭代，是否可用for...of遍历
-console.log(typeof set.values());
-console.log(typeof set.entries());
+console.log(typeof set.values());//object
+console.log(typeof set.entries());//object
 
 for (var item of set.keys()) {
     console.log(item);
